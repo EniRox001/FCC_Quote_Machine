@@ -57,7 +57,7 @@ const App = () => {
         <h2 id="text">{quote.quote}</h2>
         <p id="author">{quote.author}</p>
         <div id='action-box'>
-          <a href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${quote.quote} ${quote.author}`} id='tweet-quote'>Tweet Quote</a>
+          <a target='_blank' href={`https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=${quote.quote} ${quote.author}`} id='tweet-quote'>Tweet Quote</a>
           <button id="new-quote" onClick={handleQuoteChange}>New Quote</button>
         </div>
       </div>
